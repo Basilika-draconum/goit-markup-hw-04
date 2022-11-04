@@ -108,7 +108,11 @@ padding: 24px 0 25px;
 /* Main content */
 /* Hero */
 .hero{
-background-color: #2F303A;;
+background-color: #2F303A;
+background-image: url(../images/bcg-main.jpeg);
+background-position: center center;
+background-repeat: no-repeat;
+background-size: cover;
 }
 .hero-block{
 padding: 200px;
@@ -195,6 +199,7 @@ margin-right: 30px;
     background: var(--c-white);
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
+    padding-bottom: 30px;
 }
 .team-member:not(:last-child){
 margin-right: 30px;
@@ -216,23 +221,51 @@ margin-right: 30px;
     margin: 10px 0 30px;
 }
 
+.socials{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 16px;
+}
+.socials-items{
+
+}
+.socials-link{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 44px;
+    width: 44px;
+    border-radius: 50%;
+    background-color: var(--c-white);
+    fill:#afb1b8;
+}
+.socials-link:hover,
+.socials-link:focus{
+    fill:var(--c-white);
+    background-color: var(--accent-color); 
+}
 /* Footer general */
 .footer{
 background-color: #2F303A;
 }
 .footer-block{
-display:flex;
-flex-direction: column;
+display: flex;
 padding: 60px 0;
+gap: 70px;
 }
-
+.footer-first{
+display: flex;
+flex-direction: column;
+}
 .logo-last{
     color:var(--c-white);
 }
 .address-nav{
     margin-top: 20px;
 }
-
 .address-nav .link{
     color: rgba(255, 255, 255, 0.6);
     line-height: 1.71;
@@ -243,6 +276,7 @@ padding: 60px 0;
 .footer-item:not(:last-child){
     margin-bottom: 9px;
 }
+
 .address-nav .link:hover,
 .address-nav .link:focus{
     color: var(--accent-color);
@@ -251,6 +285,24 @@ padding: 60px 0;
 .address-nav .link-address{
     color: var(--c-white);
 }
+.socials-signin{
+    color: var(--c-white);
+    font-weight: 700;
+    line-height: 1.1428;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+.socials-link.footer-link{
+    background-color: rgba(255, 255, 255, 0.1);
+    fill: var(--c-white);
+}
+.socials-link.footer-link:hover,
+.socials-link.footer-link:focus {
+    fill: var(--c-white);
+    background-color: var(--accent-color);
+}
+
 /* Portfolio */
 .section{
     padding: 94px 0;
