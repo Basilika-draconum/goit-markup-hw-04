@@ -91,14 +91,16 @@ padding: 24px 0 25px;
 .info-item:not(:last-child) {
     margin-right: 50px;
 }
-.info-nav .info-link{
+.info-link{
     color:var(--secondary-text-color);
     font-weight: 500;
     letter-spacing: 0.02em;
     text-decoration: none;
+    display: flex;
+    align-items: center;
 }
-.info-nav .info-link:hover,
-.info-nav .info-link:focus {
+.info-link:hover,
+.info-link:focus {
     color:var(--accent-color);
 }
 .current:visited{
@@ -106,12 +108,13 @@ padding: 24px 0 25px;
 }
 .icon-formail{
     margin-right: 10px;
-    fill:currentColor;
+    fill: currentColor;
 }
 .icon-phone{
     margin-right: 10px;
     fill: currentColor;
 }
+
 /* Main content */
 /* Hero */
 .hero{
@@ -168,7 +171,14 @@ padding: 200px;
 }
 .adv-item{
     max-width: 270px;
-    
+}
+.image-icon{
+    max-width: 270px;
+    margin-bottom: 30px;
+    text-align: center;
+    background-color: #F5F4FA;
+    padding: 25px 100px;
+    border-radius: 4px;
 }
 .advantages .item{
     color: var(--primary-text-color);
@@ -259,8 +269,30 @@ margin-right: 30px;
     display: flex;
     gap: 30px;
     flex-wrap: wrap;
-}
+    justify-content: center;
+    align-items:center;
 
+}
+ 
+.client-link{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 92px;
+    width: 170px;
+    border-radius: 4px;
+    border: 1px solid #AFB1B8;
+    background-color: transparent;
+    fill:#afb1b8;
+    margin-top: 50px;
+}
+.client-link:hover,
+.client-link:focus{
+    fill: var(--accent-color);
+    background-color: var(--c-white);
+    border-color: var(--accent-color);
+    /* fill: currentColor; */
+}
 
 
 
