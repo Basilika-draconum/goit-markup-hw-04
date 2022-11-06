@@ -123,6 +123,7 @@ background-image: url(../images/bcg-main.jpeg);
 background-position: center center;
 background-repeat: no-repeat;
 background-size: cover;
+max-width: 1600px;
 }
 .hero-block{
 padding: 200px;
@@ -404,6 +405,12 @@ justify-content: center;
 }
 .works{
     background: var(--c-white);
+}
+
+.works:hover{
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
+    0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 .work-image{
     display: block;
