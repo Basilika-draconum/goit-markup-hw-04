@@ -274,6 +274,7 @@ margin-right: 30px;
     flex-wrap: wrap;
     justify-content: center;
     align-items:center;
+    margin-bottom: 50px;
 
 }
  
@@ -287,7 +288,7 @@ margin-right: 30px;
     border: 1px solid #AFB1B8;
     background-color: transparent;
     fill:#afb1b8;
-    margin-top: 50px;
+    
 }
 .client-link:hover,
 .client-link:focus{
